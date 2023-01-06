@@ -38,7 +38,7 @@ jobs:
         flake8 .
       continue-on-error: true         # 开启以防止工作流失败
     - name: Retrieve secret & Caches
-      env:
+      env: |
         PRINAME: ${{ secrets.PRINAME }}
         PASSWORD: ${{ secrets.PASSWORD }}
         MAIL: ${{ secrets.MAIL }}
@@ -46,7 +46,7 @@ jobs:
         MAILS: ${{ secrets.MAILS }}
         TOKEN: ${{ secrets.TOKEN }}
       uses: actions/cache@v3.2.2
-      with: |
+      with: 
         path: /home/runner/work/-Auto_ChoresImpact/-Auto_ChoresImpact      # 要缓存和恢复的文件、目录和通配符模式的列表
         key: TOKEN                                         # 控制缓存密码
 
