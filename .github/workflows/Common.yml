@@ -37,7 +37,7 @@ jobs:
         pip install flake8
         flake8 .
       continue-on-error: true         # 开启以防止工作流失败
-    - name: Retrieve secret
+    - name: Retrieve secret & Caches
       env:
         PRINAME: ${{ secrets.PRINAME }}
         PASSWORD: ${{ secrets.PASSWORD }}
@@ -45,7 +45,6 @@ jobs:
         ROSTER: ${{ secrets.ROSTER }}
         MAILS: ${{ secrets.MAILS }}
         TOKEN: ${{ secrets.TOKEN }}
-    - name: Cache                     # 配置缓存
       uses: actions/cache@v3.2.2
       with:
         path: /home/runner/work/-Auto_ChoresImpact/-Auto_ChoresImpact      # 要缓存和恢复的文件、目录和通配符模式的列表
