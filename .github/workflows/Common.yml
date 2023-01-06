@@ -24,10 +24,10 @@ jobs:
 
     - uses: actions/checkout@v3       # 导入文件
       env: 
-        PRINAME: ${{ secrets.PRINAME }}
-        PASSWORD: ${{ secrets.PASSWORD }}
         MAIL: ${{ secrets.MAIL }}
         ROSTER: ${{ secrets.ROSTER }}
+        PRINAME: ${{ secrets.PRINAME }}
+        PASSWORD: ${{ secrets.PASSWORD }}
         MAILS: ${{ secrets.MAILS }}
         TOKEN: ${{ secrets.TOKEN }}
     - name: Set up Python 3.10        # 建立Python环境
