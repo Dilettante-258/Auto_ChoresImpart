@@ -20,7 +20,7 @@ jobs:
     steps:
     - uses: szenius/set-timezone@v1.0 # 设置执行环境的时区
       with:
-        timezoneLinux: "Asia/Shanghai"# 中国上海
+        timezoneLinux: "Asia/Shanghai"      # 中国上海
 
     - uses: actions/checkout@v3       # 导入文件
     - name: Set up Python 3.10        # 建立Python环境
