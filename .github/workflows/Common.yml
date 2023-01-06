@@ -46,10 +46,10 @@ jobs:
         MAILS: ${{ secrets.MAILS }}
         TOKEN: ${{ secrets.TOKEN }}
       uses: actions/cache@v3.2.2
-      with:
+      with: |
         path: /home/runner/work/-Auto_ChoresImpact/-Auto_ChoresImpact      # 要缓存和恢复的文件、目录和通配符模式的列表
         key: TOKEN                                         # 控制缓存密码
 
     - name: Run the execution         # 运行程序
-      run:
+      run: |
         python Judge.py
