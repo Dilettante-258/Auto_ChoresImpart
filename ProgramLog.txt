@@ -1,0 +1,89 @@
+2023-01-06 20:13:08,658 - INFO - Start of arrange program
+2023-01-06 20:13:08,658 - INFO - Record successfully
+2023-01-06 20:13:08,658 - INFO - Split successfully
+2023-01-06 20:13:08,683 - INFO - Start of send program
+2023-01-06 20:13:08,683 - DEBUG - Got Time
+2023-01-06 20:13:08,683 - DEBUG - Confugured Successfully.
+2023-01-06 20:13:08,683 - INFO - Start of judge program
+2023-01-06 20:13:09,290 - DEBUG - Sending email to dict_values(['2226519330@qq.com'])...
+2023-01-06 20:13:23,085 - INFO - Start of arrange program
+2023-01-06 20:13:23,085 - INFO - Record successfully
+2023-01-06 20:13:23,085 - INFO - Split successfully
+2023-01-06 20:13:23,110 - INFO - Start of send program
+2023-01-06 20:13:23,110 - DEBUG - Got Time
+2023-01-06 20:13:23,110 - DEBUG - Confugured Successfully.
+2023-01-06 20:13:23,110 - INFO - Start of judge program
+2023-01-06 20:13:23,752 - DEBUG - Sending email to dict_values(['2226519330@qq.com'])...
+2023-01-06 20:13:24,331 - INFO - Sending succeeded.
+2023-01-06 20:15:39,818 - INFO - Start of arrange program
+2023-01-06 20:15:39,818 - INFO - Record successfully
+2023-01-06 20:15:39,818 - INFO - Split successfully
+2023-01-06 20:15:39,828 - INFO - Start of send program
+2023-01-06 20:15:39,828 - DEBUG - Got Time
+2023-01-06 20:15:39,828 - DEBUG - Confugured Successfully.
+2023-01-06 20:17:35,177 - INFO - Start of arrange program
+2023-01-06 20:17:35,177 - INFO - Record successfully
+2023-01-06 20:17:35,177 - INFO - Split successfully
+2023-01-06 20:17:35,199 - INFO - Start of send program
+2023-01-06 20:17:35,199 - DEBUG - Got Time
+2023-01-06 20:17:35,199 - DEBUG - Confugured Successfully.
+2023-01-06 20:17:35,199 - INFO - Start of judge program
+2023-01-06 20:17:35,826 - DEBUG - Sending email to dict_values(['2226519330@qq.com'])...
+2023-01-06 20:17:36,415 - INFO - Sending succeeded.
+2023-01-06 20:18:14,461 - INFO - Start of arrange program
+2023-01-06 20:18:14,461 - INFO - Record successfully
+2023-01-06 20:18:14,461 - INFO - Split successfully
+2023-01-06 20:18:14,480 - INFO - Start of send program
+2023-01-06 20:18:14,480 - DEBUG - Got Time
+2023-01-06 20:18:14,480 - DEBUG - Confugured Successfully.
+2023-01-06 20:18:14,480 - INFO - Start of judge program
+2023-01-06 20:19:08,782 - INFO - Start of arrange program
+2023-01-06 20:19:08,782 - INFO - Record successfully
+2023-01-06 20:19:08,782 - INFO - Split successfully
+2023-01-06 20:19:08,801 - INFO - Start of send program
+2023-01-06 20:19:08,801 - DEBUG - Got Time
+2023-01-06 20:19:08,801 - DEBUG - Confugured Successfully.
+2023-01-06 20:19:08,801 - INFO - Start of judge program
+2023-01-06 20:19:09,422 - DEBUG - Sending email to dict_values(['2226519330@qq.com'])...
+2023-01-06 20:24:02,744 - INFO - Start of arrange program
+2023-01-06 20:24:02,744 - INFO - Record successfully
+2023-01-06 20:24:02,744 - INFO - Split successfully
+2023-01-06 20:24:02,769 - INFO - Start of send program
+2023-01-06 20:24:02,769 - DEBUG - Got Time
+2023-01-06 20:24:02,769 - DEBUG - Confugured Successfully.
+2023-01-06 20:24:02,769 - INFO - Start of judge program
+2023-01-06 20:24:03,689 - DEBUG - Sending email to dict_values(['2226519330@qq.com'])...
+2023-01-06 20:25:51,434 - INFO - Start of arrange program
+2023-01-06 20:25:51,434 - INFO - Record successfully
+2023-01-06 20:25:51,434 - INFO - Split successfully
+2023-01-06 20:25:51,461 - INFO - Start of send program
+2023-01-06 20:25:51,461 - DEBUG - Got Time
+2023-01-06 20:25:51,461 - DEBUG - Confugured Successfully.
+2023-01-06 20:25:51,461 - INFO - Start of judge program
+2023-01-06 20:25:51,981 - DEBUG - Sending email to dict_values(['2226519330@qq.com'])...
+2023-01-06 20:25:52,559 - INFO - Sending succeeded.
+2023-01-06 20:26:22,013 - INFO - Start of arrange program
+2023-01-06 20:26:22,013 - INFO - Record successfully
+2023-01-06 20:26:22,013 - INFO - Split successfully
+2023-01-06 20:26:22,031 - INFO - Start of send program
+2023-01-06 20:26:22,031 - DEBUG - Got Time
+2023-01-06 20:26:22,032 - DEBUG - Confugured Successfully.
+2023-01-06 20:26:22,032 - INFO - Start of judge program
+2023-01-06 20:26:28,247 - INFO - Start of arrange program
+2023-01-06 20:26:28,247 - INFO - Record successfully
+2023-01-06 20:26:28,247 - INFO - Split successfully
+2023-01-06 20:26:28,269 - INFO - Start of send program
+2023-01-06 20:26:28,269 - DEBUG - Got Time
+2023-01-06 20:26:28,269 - DEBUG - Confugured Successfully.
+2023-01-06 20:26:28,269 - INFO - Start of judge program
+2023-01-06 20:26:28,808 - DEBUG - Sending email to dict_values(['2226519330@qq.com'])...
+2023-01-06 20:26:29,312 - INFO - Sending succeeded.
+2023-01-06 20:27:38,658 - INFO - Start of arrange program
+2023-01-06 20:27:38,658 - INFO - Record successfully
+2023-01-06 20:27:38,658 - INFO - Split successfully
+2023-01-06 20:27:38,677 - INFO - Start of send program
+2023-01-06 20:27:38,677 - DEBUG - Got Time
+2023-01-06 20:27:38,677 - DEBUG - Confugured Successfully.
+2023-01-06 20:27:38,677 - INFO - Start of judge program
+2023-01-06 20:27:39,291 - DEBUG - Sending email to ['2226519330@qq.com']...
+2023-01-06 20:27:39,794 - INFO - Sending succeeded.
