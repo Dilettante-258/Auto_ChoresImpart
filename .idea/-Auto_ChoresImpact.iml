@@ -5,4 +5,9 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
+  <component name="PackageRequirementsSettings">
+    <option name="requirementsPath" value="D:\GitHub\-Auto_ChoresImpact\requirements.txt" />
+    <option name="versionSpecifier" value="大于或等于 (&gt;=x.y.z)" />
+    <option name="removeUnused" value="true" />
+  </component>
 </module>

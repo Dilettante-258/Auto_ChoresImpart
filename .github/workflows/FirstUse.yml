@@ -5,6 +5,15 @@ on:
   pull_request:
     branches: [ "main" ]              # 修改时启动workflow
   workflow_dispatch:                  # 手动触发workflow
+
+env:
+  MAIL: ${{ secrets.MAIL }}
+  ROSTER: ${{ secrets.ROSTER }}
+  PRINAME: ${{ secrets.PRINAME }}
+  PASSWORD: ${{ secrets.PASSWORD }}
+  MAILS: ${{ secrets.MAILS }}
+  TOKEN: ${{ secrets.TOKEN }}
+
 jobs:
   job_1:
     name: Arrange
@@ -29,14 +38,7 @@ jobs:
           pip install flake8
           flake8 .
         continue-on-error: true         # 开启以防止工作流失败
-      - name: Retrieve secret
-        env:
-          PRINAME: ${{ secrets.PRINAME }}
-          PASSWORD: ${{ secrets.PASSWORD }}
-          MAIL: ${{ secrets.MAIL }}
-          ROSTER: ${{ secrets.ROSTER }}
-          MAILS: ${{ secrets.MAILS }}
-          TOKEN: ${{ secrets.TOKEN }}
+
       - name: Cache                     # 配置缓存
         uses: actions/cache@v3.2.2
         with:
@@ -76,14 +78,7 @@ jobs:
           pip install flake8
           flake8 .
         continue-on-error: true         # 开启以防止工作流失败
-      - name: Retrieve secret
-        env:
-         PRINAME: ${{ secrets.PRINAME }}
-         PASSWORD: ${{ secrets.PASSWORD }}
-         MAIL: ${{ secrets.MAIL }}
-         ROSTER: ${{ secrets.ROSTER }}
-         MAILS: ${{ secrets.MAILS }}
-         TOKEN: ${{ secrets.TOKEN }}
+
       - name: Cache                     # 配置缓存
         uses: actions/cache@v3.2.2
         with:
