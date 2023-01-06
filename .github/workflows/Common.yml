@@ -23,6 +23,13 @@ jobs:
         timezoneLinux: "Asia/Shanghai"      # 中国上海
 
     - uses: actions/checkout@v3       # 导入文件
+      env: 
+        PRINAME: ${{ secrets.PRINAME }}
+        PASSWORD: ${{ secrets.PASSWORD }}
+        MAIL: ${{ secrets.MAIL }}
+        ROSTER: ${{ secrets.ROSTER }}
+        MAILS: ${{ secrets.MAILS }}
+        TOKEN: ${{ secrets.TOKEN }}
     - name: Set up Python 3.10        # 建立Python环境
       uses: actions/setup-python@v4
       with:
@@ -38,13 +45,6 @@ jobs:
         flake8 .
       continue-on-error: true         # 开启以防止工作流失败
     - name: Retrieve secret & Caches
-      env: 
-        PRINAME: ${{ secrets.PRINAME }}
-        PASSWORD: ${{ secrets.PASSWORD }}
-        MAIL: ${{ secrets.MAIL }}
-        ROSTER: ${{ secrets.ROSTER }}
-        MAILS: ${{ secrets.MAILS }}
-        TOKEN: ${{ secrets.TOKEN }}
       uses: actions/cache@v3.2.2
       with: 
         path: /home/runner/work/-Auto_ChoresImpact/-Auto_ChoresImpact      # 要缓存和恢复的文件、目录和通配符模式的列表
