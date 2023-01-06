@@ -3,13 +3,13 @@
 name: Common Execution
 
 on:
+  workflow_dispatch:                  # 手动触发workflow
   schedule:
     - cron: '20 23 * * *'
   push:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]              # 修改时启动workflow
-  workflow_dispatch:                  # 手动触发workflow
 
 jobs:
   build:
