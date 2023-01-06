@@ -38,7 +38,7 @@ jobs:
         flake8 .
       continue-on-error: true         # 开启以防止工作流失败
     - name: Retrieve secret & Caches
-      env: |
+      env: 
         PRINAME: ${{ secrets.PRINAME }}
         PASSWORD: ${{ secrets.PASSWORD }}
         MAIL: ${{ secrets.MAIL }}
