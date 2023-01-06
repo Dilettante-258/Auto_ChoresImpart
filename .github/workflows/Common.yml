@@ -11,6 +11,14 @@ on:
   pull_request:
     branches: [ "main" ]              # 修改时启动workflow
 
+env: 
+  MAIL: ${{ secrets.MAIL }}
+  ROSTER: ${{ secrets.ROSTER }}
+  PRINAME: ${{ secrets.PRINAME }}
+  PASSWORD: ${{ secrets.PASSWORD }}
+  MAILS: ${{ secrets.MAILS }}
+  TOKEN: ${{ secrets.TOKEN }}
+
 jobs:
   build:
     runs-on: ubuntu-latest            # 最新版乌班图
@@ -23,13 +31,7 @@ jobs:
         timezoneLinux: "Asia/Shanghai"      # 中国上海
 
     - uses: actions/checkout@v3       # 导入文件
-      env: 
-        MAIL: ${{ secrets.MAIL }}
-        ROSTER: ${{ secrets.ROSTER }}
-        PRINAME: ${{ secrets.PRINAME }}
-        PASSWORD: ${{ secrets.PASSWORD }}
-        MAILS: ${{ secrets.MAILS }}
-        TOKEN: ${{ secrets.TOKEN }}
+
     - name: Set up Python 3.10        # 建立Python环境
       uses: actions/setup-python@v4
       with:
