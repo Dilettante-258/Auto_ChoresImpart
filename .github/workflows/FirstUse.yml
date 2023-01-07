@@ -93,6 +93,6 @@ jobs:
         run:
           python Judge.py
       - uses: actions/upload-artifact@v2
-          with:
-            name: ProgramLog
-            path: ProgramLog.txt
+        with:
+          name: ProgramLog
+          path: ProgramLog.txt
