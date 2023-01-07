@@ -3,7 +3,7 @@ import logging
 import shelve
 import os
 import Send
-logging.basicConfig(filename='ProgramLog.txt', level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
+logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
 logging.info('Start of arrange program')
 
 #导入个人变量
@@ -12,7 +12,7 @@ password = os.environ['PASSWORD']
 mail = os.environ['MAIL']
 roster = os.environ['ROSTER']
 mails = os.environ['MAILS']
-
+logging.info('Recorded successfully')
 
 #分割信息
 nlists = roster.split(',')
@@ -22,7 +22,7 @@ n = 0
 for member in nlists:
     roster_information[member] = mlists[n]
     n += 1
-logging.info('Split successfully')
+logging.info('Splited successfully')
 
 #安排时间
 delta = datetime.timedelta(days=3)
@@ -33,6 +33,7 @@ for i in range(0, 1*len(nlists), len(nlists)):
         time = beginning_date + delta*i
         i += 1
         duty_roster[time] = person
+logging.info('Arranged successfully')
 
 #保存二进制文件
 shelfFile1 = shelve.open('roster_information')
@@ -41,8 +42,10 @@ shelfFile1['roster_information'] = roster_information
 shelfFile2['duty_roster'] = duty_roster
 shelfFile1.close()
 shelfFile2.close()
+logging.info('Saved successfully')
 
 #第一次启动
+logging.info('Ready to the impart.')
 for name, mail in roster_information:
     logging.info('Send the first mail to %(name)s -%(mail)s...')
     Send.sendfirstmail(name, mail)
