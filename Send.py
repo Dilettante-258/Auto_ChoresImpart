@@ -6,7 +6,7 @@ from email.header import Header
 from email.utils import parseaddr, formataddr
 import logging
 from Arrange import PriName,mail,password
-logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
+logging.basicConfig(filename='ProgramLog.txt', level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
 logging.info('Start of send program')
 
 #时间获取部分
@@ -60,7 +60,6 @@ def sendfirstmail(name, email):
     smtpObj.ehlo()
     smtpObj.starttls()
     smtpObj.login(mail, password)
-    logging.debug('Sending first email to %s...' % email)
     sendmail_status = smtpObj.sendmail(mail, email, FirstConfigure(name, email).as_string())
     if sendmail_status != {}:
         logging.debug('There was a problem sending email to %s: %s' % (email, sendmail_status))

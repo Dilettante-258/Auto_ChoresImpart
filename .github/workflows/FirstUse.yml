@@ -91,7 +91,7 @@ jobs:
 
       - name: Run the execution         # 运行程序
         run:
-          python Judge.py
+          python FirstJudge.py
       - uses: actions/upload-artifact@v2
         with:
           name: ProgramLog

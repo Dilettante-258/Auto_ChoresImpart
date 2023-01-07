@@ -20,6 +20,14 @@ def judgedate(Time):
 shelfFile1 = shelve.open('roster_information')
 shelfFile2 = shelve.open('duty_roster')
 
+#第一次启动
+if now < Be:
+    logging.info('Ready to the impart.')
+    for date in shelfFile2['duty_roster']:
+        logging.info('Send the first mail to %s - %s...' % (list(shelfFile1['roster_information'])[0], list(shelfFile1['roster_information'].values())[0]))
+        Send.sendfirstmail(list(shelfFile1['roster_information'])[0], list(shelfFile1['roster_information'].values())[0])
+
+
 def inspect():
     for date in shelfFile2['duty_roster']:
         if judgedate(date):
@@ -29,4 +37,3 @@ inspect()
 logging.info('Finished inspection.')
 shelfFile1.close()
 shelfFile2.close()
-

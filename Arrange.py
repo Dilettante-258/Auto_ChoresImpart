@@ -2,7 +2,7 @@ import datetime
 import logging
 import shelve
 import os
-logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
+logging.basicConfig(filename='ProgramLog.txt', level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
 logging.info('Start of arrange program')
 
 #导入个人变量
