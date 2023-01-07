@@ -9,10 +9,9 @@ logging.info('Start of judge program')
 now = datetime.datetime.now()
 
 def judgedate(Time):
-    reality = 0
     sdelta = datetime.timedelta(days=1)
-    if now > Time and (now - Time) < sdelta:
-        return True
+    if (now > Time) and ((now - Time) < sdelta):
+        return False
     else:
         logging.debug('There is no cleaning schedule')
     return False
