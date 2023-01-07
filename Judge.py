@@ -12,10 +12,10 @@ def judgedate(Time):
     reality = 0
     sdelta = datetime.timedelta(days=1)
     if now > Time and (now - Time) < sdelta:
-        reality += 1
+        return True
     else:
         logging.debug('There is no cleaning schedule')
-    return reality
+    return False
 
 def inspect():
     shelfFile1 = shelve.open('roster_information')

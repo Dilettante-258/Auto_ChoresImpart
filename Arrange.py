@@ -45,4 +45,5 @@ shelfFile2.close()
 #第一次启动
 for name,mail in roster_information:
     Send.sendfirstmail(name, mail)
+    logging.info('Send the first mail to %(name)s -%(mail)s...')
 
