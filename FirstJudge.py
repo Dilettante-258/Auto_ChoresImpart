@@ -23,15 +23,17 @@ shelfFile2 = shelve.open('duty_roster')
 #第一次启动
 if now < Be:
     logging.info('Ready to the impart.')
-    for date in shelfFile2['duty_roster']:
-        logging.info('Send the first mail to %s - %s...' % (list(shelfFile1['roster_information'])[0], list(shelfFile1['roster_information'].values())[0]))
-        Send.sendfirstmail(list(shelfFile1['roster_information'])[0], list(shelfFile1['roster_information'].values())[0])
+    for n in range(0, len(shelfFile1['roster_information'])):
+        logging.info('Send the first mail to %s - %s...' % (list(shelfFile1['roster_information'])[n], list(shelfFile1['roster_information'].values())[n]))
+        Send.sendfirstmail(list(shelfFile1['roster_information'])[n], list(shelfFile1['roster_information'].values())[n])
 
 
 def inspect():
     for date in shelfFile2['duty_roster']:
+        n = 0
         if judgedate(date):
-            Send.sendmail(list(shelfFile1['roster_information'])[0], list(shelfFile1['roster_information'].values())[0])
+            Send.sendmail(list(shelfFile1['roster_information'])[n], list(shelfFile1['roster_information'].values())[n])
+        n +=1
 
 inspect()
 logging.info('Finished inspection.')
