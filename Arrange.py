@@ -2,6 +2,7 @@ import datetime
 import logging
 import shelve
 import os
+import Send
 logging.basicConfig(filename='ProgramLog.txt', level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
 logging.info('Start of arrange program')
 
@@ -40,4 +41,8 @@ shelfFile1['roster_information'] = roster_information
 shelfFile2['duty_roster'] = duty_roster
 shelfFile1.close()
 shelfFile2.close()
+
+#第一次启动
+for name,mail in roster_information:
+    Send.sendfirstmail(name, mail)
 

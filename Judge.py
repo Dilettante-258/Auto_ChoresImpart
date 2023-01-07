@@ -22,8 +22,7 @@ def inspect():
     shelfFile2 = shelve.open('duty_roster')
     pprint.pprint(shelfFile2['duty_roster'])
     for date in shelfFile2['duty_roster']:
-        #if judgedate(date):
-        if True:
+        if judgedate(date):
             Send.sendmail(list(shelfFile1['roster_information'])[0], list(shelfFile1['roster_information'].values())[0])
     shelfFile1.close()
     shelfFile2.close()
