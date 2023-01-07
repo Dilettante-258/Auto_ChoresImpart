@@ -46,6 +46,6 @@ logging.info('Saved successfully')
 
 #第一次启动
 logging.info('Ready to the impart.')
-for name, mail in roster_information:
+for name, mail in roster_information.items():
     logging.info('Send the first mail to %(name)s -%(mail)s...')
     Send.sendfirstmail(name, mail)

@@ -10,8 +10,8 @@ now = datetime.datetime.now()
 def judgedate(Time):
     sdelta = datetime.timedelta(days=1)
     if (now > Time) and ((now - Time) < sdelta):
-        logging.info('return False')
-        return False
+        logging.info('return True')
+        return True
     else:
         logging.debug('There is no cleaning schedule')
     return False
