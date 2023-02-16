@@ -12,7 +12,7 @@ logging.info('Start of send program')
 #时间获取部分
 week = ["星期一", "星期二", "星期三", "星期四", "星期五", "星期六", "星期日"]
 today = datetime.datetime.now()
-weekday = "今天是第%d周的%s。\n" % (int(today.strftime("%U")), week[int(today.strftime("%w"))])
+weekday = "今天是第%d周的%s。\n" % (int(today.strftime("%U")-6), week[int(today.strftime("%w"))])
 ntime = today.strftime('%Y.%b.%d %a.\n%p  %H:%M:%S')
 beginning_date = datetime.datetime(2023, 2, 13, 7, 30, 0)
 logging.debug('Got Time')
