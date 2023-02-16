@@ -10,7 +10,7 @@ logging.basicConfig(filename='ProgramLog.txt', level=logging.DEBUG, format='%(as
 logging.info('Start of send program')
 
 #时间获取部分
-week = ["星期一", "星期二", "星期三", "星期四", "星期五", "星期六", "星期日"]
+week = ["星期日", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六"]
 today = datetime.datetime.now()
 weekday = "今天是第%d周的%s。\n" % (int(today.strftime("%U"))-6, week[int(today.strftime("%w"))])
 ntime = today.strftime('%Y.%b.%d %a.\n%p  %H:%M:%S')
