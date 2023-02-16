@@ -46,7 +46,11 @@ jobs:
         pip install flake8
         flake8 .
       continue-on-error: true         # 开启以防止工作流失败
-
+    - name: Retrieve secret & Caches
+      uses: actions/cache@v3.2.2
+      with: 
+        path: /home/runner/work/-Auto_ChoresImpact/-Auto_ChoresImpact      # 要缓存和恢复的文件、目录和通配符模式的列表
+        key: TOKEN                                         # 控制缓存密码
     - name: Run the execution         # 运行程序
       run: |
         python Judge.py
