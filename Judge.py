@@ -26,6 +26,8 @@ def inspect():
         if judgedate(date):
             Send.sendmail(list(shelfFile1['roster_information'])[n], list(shelfFile1['roster_information'].values())[n])
         n = n + 1
+        if n = len(list(shelfFile1['roster_information'])):
+            n = 0
 
 inspect()
 logging.info('Finished inspection.')
