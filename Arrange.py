@@ -27,9 +27,9 @@ logging.info('Splited successfully')
 delta = datetime.timedelta(days=3)
 beginning_date = datetime.datetime(2023, 2, 13)
 duty_roster = {}
+j = 0
+time = beginning_date
 for i in range(0, 10*len(nlists), len(nlists)):
-    j = 0
-    time = beginning_date
     for person in nlists:
         time = beginning_date + delta*j
         j += 1
